@@ -59,6 +59,7 @@ AFRAME.registerComponent("rig-wasd-controls", {
   },
 
   getChildCamera: function () {
+    console.log("GETTING CHILD CAMERA OF RIG.");
     const rig = this.el;
     for (let i = 0; i < rig.children.length; i++) {
       if (rig.children[i].isEntity) {
