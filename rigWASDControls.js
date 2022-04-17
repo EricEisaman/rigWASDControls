@@ -72,6 +72,7 @@ AFRAME.registerComponent("rig-wasd-controls", {
         }
       }
     }
+    return AFRAME.scenes[0].camera.el;
   },
 
   tick: function (time, delta) {
